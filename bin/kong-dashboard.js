@@ -164,7 +164,7 @@ function start(argv) {
     }
     if (semver.gte(version, '2.0.0')) {
       terminal.error("This version of Kong dashboard doesn't support Kong v2.0 and higher.");
-      process.exit(1);
+    //   process.exit(1);
     }
     terminal.success("Connected to Kong on " + argv.kongUrl + ".");
     terminal.info("Kong version is " + version);
